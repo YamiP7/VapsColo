@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Vapers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Vapers</h1>
+        <nav>
+            <ul>
+                <li><a href="#kits-inicio">Kits de inicio</a></li>
+                <li><a href="#pods-recargables">Pods recargables</a></li>
+                <li><a href="#kits-avanzada">Kits de avanzada</a></li>
+                <li><a href="#atomizadores">Atomizadores</a></li>
+                <li><a href="#baterias">Baterías</a></li>
+                <li><a href="#cargadores">Cargadores</a></li>
+                <li><a href="#mods">Mods</a></li>
+                <li><a href="#accesorios">Accesorios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="admin-panel">
+        <h2>Panel de Administración</h2>
+        <form id="product-form">
+            <label for="category">Categoría:</label>
+            <select id="category">
+                <option value="kits-inicio">Kits de inicio</option>
+                <option value="pods-recargables">Pods recargables</option>
+                <option value="kits-avanzada">Kits de avanzada</option>
+                <option value="atomizadores">Atomizadores</option>
+                <option value="baterias">Baterías</option>
+                <option value="cargadores">Cargadores</option>
+                <option value="mods">Mods</option>
+                <option value="accesorios">Accesorios</option>
+            </select>
+
+            <label for="product-name">Nombre del Producto:</label>
+            <input type="text" id="product-name" required>
+
+            <label for="product-price">Precio:</label>
+            <input type="number" id="product-price" required>
+
+            <label for="product-stock">Stock:</label>
+            <input type="number" id="product-stock" required>
+
+            <label for="product-image">Imagen del Producto:</label>
+            <input type="file" id="product-image" accept="image/*">
+
+            <button type="submit">Agregar Producto</button>
+        </form>
+    </section>
+
+    <section id="product-list">
+        <h2>Productos Disponibles</h2>
+        <div id="product-container"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
